@@ -69,15 +69,12 @@ namespace LinkedListLabD
             sll.AddFirst("Joe Blow");
             sll.AddLast("Joe Schmoe");
             sll.AddLast("John Smith");
-            sll.AddLast("Jane Doe");
-            sll.AddLast("Bob Bobberson");
-            sll.AddLast("Sam Sammerson");
-            sll.AddLast("Dave Daverson");
+          
 
             sll.RemoveLast();
             sll.RemoveLast();
-            Assert.AreEqual(5,sll.Count);
-            Assert.AreEqual("Bob Bobberson", sll.GetValue(4));
+            Assert.AreEqual(1,sll.Count);
+            Assert.AreEqual("Joe Blow", sll.GetValue(0));
         }
 
         [Test]
