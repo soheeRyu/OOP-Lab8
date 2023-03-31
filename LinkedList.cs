@@ -78,11 +78,11 @@ namespace LinkedListLabD
                 } else
                 {
                     Node newNode = this.Head;
-                    while(newNode.Next.Next != null)
-                    { 
+                    while(newNode.Next != null)
+                    {
                         newNode = newNode.Next;
                     }
-                    newNode.Next = null;
+                    newNode = null;
                 }
             } else
             {
